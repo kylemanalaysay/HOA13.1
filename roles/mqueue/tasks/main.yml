@@ -1,0 +1,8 @@
+---
+
+- name: Install RabbitMQ
+  apt: name=rabbitmq-server state=latest
+
+- name: Add user
+  shell: rabbitmqctl add_user kyle felina1602; rabbitmqctl set_permissions kyle ".*" ".*" ".*"
+

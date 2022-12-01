@@ -1,0 +1,15 @@
+---
+
+- name: Install packages
+  shell: sudo add-apt-repository cloud-archive:zed
+
+- name: Install Client
+  apt: 
+    name:
+      - nova-compute
+      - python3-openstackclient 
+    state: latest
+    
+
+  
+

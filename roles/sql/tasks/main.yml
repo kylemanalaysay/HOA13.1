@@ -1,0 +1,11 @@
+---
+
+- name: Install Mariadb Server
+  apt: name=mariadb-server state=latest
+
+- name: Install PyMySQL
+  apt: name=python3-pymysql state=latest
+
+- name: Restart Mariadb
+  service: name=mysql state=restarted
+
