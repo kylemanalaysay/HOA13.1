@@ -7,4 +7,5 @@
   lineinfile: dest=/etc/ntp.conf state=present regexp='^server ' line='server server1 iburst'
 
 - name: start ntp
-  service: name=ntp state=started enabled=true 
+  service: name=ntp state=started enabled=true
+

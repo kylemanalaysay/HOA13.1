@@ -3,6 +3,6 @@
 - name: Install Etcd
   apt: name=etcd state=latest
 
-- name: Restart Etcd  
+- name: Restart Etcd
   service: name=etcd state=restarted
-  
+
